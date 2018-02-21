@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="label_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_eight</item>
+        <item name="android:layout_marginLeft">@dimen/margin_eight</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryLight</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+    <style name="text_views">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/margin_eight</item>
+        <item name="android:layout_marginStart">@dimen/margin_eight</item>
+        <item name="android:layout_marginTop">@dimen/margin_eight</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="text_views_ingredients" parent="text_views">
+        <item name="android:layout_marginStart">@dimen/margin_nineteen</item>
+        <item name="android:padding">@dimen/padding_ten</item>
+    </style>
+
+
+</resources>
