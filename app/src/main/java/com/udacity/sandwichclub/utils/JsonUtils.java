@@ -46,21 +46,21 @@ public class JsonUtils {
             JSONObject objectName = JsonSandwich.getJSONObject(NAME);
 
             // Extract the value for the key called "mainName"
-            String mMainName = objectName.getString(MAIN_NAME);
+            String mMainName = objectName.optString(MAIN_NAME);
 
             // Extract the value for the key called "alsoKnownAs"
             JSONArray mAlsoKnownAs = objectName.getJSONArray(ALSO_KNOWN_AS);
             List<String> alsoKnownAs = convertJsonArrayAsListString(mAlsoKnownAs);
 
             // Extract the value for the key called "placeOfOrigin"
-            String mPlaceOfOrigin = JsonSandwich.getString(PLACE_OF_ORIGIN);
+            String mPlaceOfOrigin = JsonSandwich.optString(PLACE_OF_ORIGIN);
             Log.d(TAG, "Place of Origin is: " + mPlaceOfOrigin);
 
             // Extract the value for the key called "description"
-            String mDescription = JsonSandwich.getString(DESCRIPTION);
+            String mDescription = JsonSandwich.optString(DESCRIPTION);
 
             // Extract the value for the key called "image"
-            String mImage = JsonSandwich.getString(IMAGE);
+            String mImage = JsonSandwich.optString(IMAGE);
 
             // Extract the value for the key called "ingredients"
             JSONArray mIngredients = JsonSandwich.getJSONArray(INGREDIENTS);
